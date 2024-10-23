@@ -3,6 +3,7 @@
 namespace Ledc\XhdPay;
 
 use Closure;
+use InvalidArgumentException;
 
 /**
  * 小红点支付配置管理类
@@ -111,7 +112,7 @@ class Config extends Contracts\Config
     }
 
     /**
-     * 验签
+     * 验签（签名验证失败时，会抛出异常）
      * @param string $signature
      * @param array $params
      * @return bool
@@ -121,7 +122,7 @@ class Config extends Contracts\Config
         if (hash_equals($this->generateSignature($params), $signature)) {
             return true;
         }
-        return false;
+        throw new InvalidArgumentException('Invalid signature');
     }
 
     /**

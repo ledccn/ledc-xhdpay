@@ -30,6 +30,9 @@ $api = new XhdPay($config);
 // 获得完整的通知URL地址
 $notifyUrl = $config->->getPayNotifyUrl($attach);
 
+// 验证签名（签名验证失败时，会抛出异常）
+$config->verifySignature();
+
 // 统一支付下单
 $api->pay();
 
