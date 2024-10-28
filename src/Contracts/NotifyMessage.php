@@ -37,4 +37,28 @@ class NotifyMessage extends Config
     //    "orderDesc": "ISG--ISG BioSkin 賦活奇....",
     //    "merchantNo": "联合商户号",
     //    "status": "Completed"
+
+    /**
+     * 退款成功后biz节点的报文实例
+     */
+    //    "terminalNo": "联合设备号",
+    //    "orderNo": "网关订单号",
+    //    "merOrderNo": "商户订单号",
+    //    "bankCardType": "U",
+    //    "channelOrderNo": "渠道退款订单号（微信、支付宝...）",
+    //    "buyerId": "用户openid",
+    //    "payableAmount": "1",
+    //    "orderAmount": "1",
+    //    "orderTime": "2024-10-23 17:33:42",
+    //    "notifyType": "Refund",
+    //    "refundInfo": {
+    //      "refundOrderNo": "网关退货订单号",
+    //      "refundTime": "2024-10-28 11:56:52",
+    //      "refundStatus": "Success",
+    //      "merRefundOrderNo": "商户退货订单号",
+    //      "refundAmount": "1"
+    //    },
+    //    "orderDesc": "ISG--ISG BioSkin 賦活奇....",
+    //    "merchantNo": "联合商户号",
+    //    "status": "Closed"
 }
